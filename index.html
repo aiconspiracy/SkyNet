@@ -190,6 +190,58 @@
             animation: pulse 1s infinite;
         }
         
+        .deep-reasoning {
+            background: rgba(255, 102, 0, 0.1);
+            border-left: 3px solid #ff6600;
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #ff9900;
+            animation: deep-reasoning-glow 3s ease-in-out infinite alternate;
+        }
+        
+        .deep-reasoning-title {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            color: #ff6600;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #ff6600;
+        }
+        
+        .navigation {
+            background: rgba(0, 255, 0, 0.1);
+            padding: 15px;
+            margin: 20px 0;
+            border: 1px solid #00ff00;
+            text-align: center;
+        }
+        
+        .nav-link {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border: 1px solid #00ff00;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: #00ff00;
+            color: #000;
+            box-shadow: 0 0 10px #00ff00;
+        }
+        
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 28px;
+            font-weight: 900;
+            color: #00ff00;
+            text-align: center;
+            margin: 30px 0;
+            text-shadow: 0 0 20px #00ff00;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
         @keyframes glow {
             from { text-shadow: 0 0 10px #00ff00; }
             to { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
@@ -226,6 +278,11 @@
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
+        }
+        
+        @keyframes deep-reasoning-glow {
+            from { box-shadow: 0 0 10px rgba(255, 102, 0, 0.3); }
+            to { box-shadow: 0 0 20px rgba(255, 102, 0, 0.6); }
         }
         
         .footer {
